@@ -1,0 +1,145 @@
+firebase phone auth :
+======================
+
+video link : https://youtu.be/GoIREQjWiWk?si=VeeiAE3fXFRwqUzh
+------------
+
+Project link : https://www.patreon.com/posts/75827635
+--------------
+
+
+In Pub.dev :
+=============
+
+country picker package link : https://pub.dev/packages/country_picker
+-----------------------------
+
+
+sha1 key generate for android :
+------------------------------
+
+note : type below command in terminal into your project android folder 
+------
+
+keytool -list -v \
+-alias androiddebugkey -keystore ~/.android/debug.keystore
+
+password : android
+
+Important notes :
+==================
+
+if you not able to see REVERSED_CLIENT_ID into your GoogleService-Info.plist file into ios folder then 
+don't forget to enable google sign In into your firebase project authentication section in firebase console..
+It should be enable.. then download GoogleService-Info.plist latest file then check REVERSED_CLIENT_ID
+.. You can see that id in to your project GoogleService-Info.plist file like below,
+
+example : 
+-----------
+
+<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.494194160460-shhh7p7jr81afp7pkhtec0mh9jvkkfit</string>
+
+
+
+below pub.dev packages must to add for phoneotp authentication with firebase 
+=============================================================================
+
+note : 
+press command + shift + p --> then select add dependency option -> then add firebase_core,firebase_auth, like this use , (comma) when add multiple packages
+
+1. firebase_core
+2. firebase_auth
+3. cloud_firestore
+4. firebase_storage
+
+	
+Important note:
+===============
+
+must need to change below thing Podfile into ios folder
+
+
+old code in Podfile
+
+# platform :ios, '11.0'
+
+new code in Podfile
+
+ platform :ios, '11.0'
+
+ need to uncommant the platform 
+
+
+
+ Another Important thing :
+ ==========================
+
+ open ios folder into your project terminal
+
+ then type below command 
+
+ if you are M1 Mac user then type below command
+
+ sudo arch-x86_64 gem install ffi
+
+ arch-x86_64 pod install -> if not worked, then:arch-x86_64 pod install --repo-update
+
+ note : 
+ --------
+ for my case(santha (date: 9/1/2024)) in my system (Macbook M1 Air) I used "pod install" command it worked for me. 
+ and added all the files
+
+
+
+App Check into Firebase Project:
+================================
+
+ Go To Firebase Project --> then select Project Settings --> then go to App Check -- and to necessary settings here for Android & iOS
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ Important Package (pub dev) for OTP Entering page :
+ ===================================================
+
+ package name is "pinput"
+
+ package link : https://pub.dev/packages/pinput
+ --------------
+
+ click Command + Shift + P --> Select Add dependency --> then enter pinput --> then dependency will load automatically in you project
+
+go on check your project pubspec.yaml file dependency section
+
+
+
+
+Important :
+===========
+
+Image picker(pub.dev) package we used here
+
+package link : https://pub.dev/packages/image_picker
+--------------
+
+
+
+
+Important :
+===========
+
+for Ios app Image upload
+------------------------
+
+1. open this project ios folder into Xcode 
+2. then select info file then on the right side click + (plus) button 
+3. then select Privacy - Photo Library Usable Description
+4. then put below line in the right side of the Privacy - Photo Library Usable Description
+   "This access allow us to upload images from your phone gallery to our server"

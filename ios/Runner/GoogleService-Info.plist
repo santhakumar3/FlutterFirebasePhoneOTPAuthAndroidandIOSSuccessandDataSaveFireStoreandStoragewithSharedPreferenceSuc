@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>494194160460-shhh7p7jr81afp7pkhtec0mh9jvkkfit.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.494194160460-shhh7p7jr81afp7pkhtec0mh9jvkkfit</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>494194160460-r3bu1kmg6lt82gvj4fukbip3ofobrmef.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBHkm9ID-hd2DtoQwZu0Xg9-SVYTxqYx9M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>494194160460</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.phoneauthFirebase</string>
+	<key>PROJECT_ID</key>
+	<string>phoneauthflutter-1f753</string>
+	<key>STORAGE_BUCKET</key>
+	<string>phoneauthflutter-1f753.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:494194160460:ios:c998557e524ae0026215e9</string>
+</dict>
+</plist>
